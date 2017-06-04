@@ -1,0 +1,412 @@
+* {
+	padding: 0;
+	margin: 0;
+	font: 10px Ubuntu;
+}
+
+a {
+	text-decoration: none;
+	color: #a4a4a4;
+}
+
+.vertical-line {
+	height: inherit;
+	width: 0px;
+	border: 1px solid black;
+}
+
+.root-wrapper {
+	margin: 0 auto;
+	width: 1356px;
+	height: inherit;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #F2DE0D;
+	/*background: linear-gradient(to bottom right, #F2DE0D 10%, green 30%, violet 80%);*/
+}
+
+.root {
+	width: 965px;
+	height: 100%;
+	display: flex;
+}
+
+.left-wrapper {
+	width: 60px;
+	/*z-index: 1;*/
+	
+}
+
+.left-sidebar {
+	width: inherit;
+	height: 625px;
+	position: fixed;
+	/*box-shadow: 1px 0 3px rgba(0, 0, 0, 0.5);*/
+	border-right: 1px solid rgba(0, 0, 0, 0.7);
+	background-color: #F7F7F7;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.left-sidebar-top {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.chosen {
+	background-color: yellow;
+	height: 55px !important;
+}
+
+.left-sidebar-top>a {
+	height: 70px !important;
+}
+
+.left-sidebar-top i {
+	color: #3d3d3d;
+	font-size: 28px;
+}
+
+.r-logo {
+	height: 100%;
+}
+
+.left-sidebar-top a {
+	width: 60px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.content-wrapper {
+	height: 100%;
+	width: 905px;
+}
+
+.main-content {
+	width: inherit;
+	background-color: #F1F1F1;
+}
+
+.head-navigation-bar {
+	position: fixed;
+	height: inherit;
+	width: inherit;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+	/*box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #F1F1F1;
+}
+
+.head-links {
+	display: flex;
+	align-items: center;
+	padding-left: 20px;
+	justify-content: space-between;
+	height: 100%;
+	width: 70%;
+}
+
+.head-links a {
+	color: #959595;
+}
+
+.head-actions {
+	display: flex;
+	height: inherit;
+	width: 20%;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.head-actions i {
+	color: grey;
+}
+
+.top-wrapper {
+	height: 50px;
+	width: inherit;
+}
+
+.card-wrapper {
+	width: 100%;
+	/*margin-bottom: 20px;*/
+}
+
+.card-container {
+	width: 855px;
+	margin: 0 auto;
+	height: 435px;
+	margin-bottom: 50px;
+	background-color: red;
+}
+
+.cards-checkbox-wrapper {
+	height: 55px;
+	width: inherit;
+	background-color: #E7E7E7;
+}
+
+.cards-checkbox {
+	display: flex;
+	align-items: center;
+	/*justify-content: space-between;*/
+	padding-left: 20px;
+	height: inherit;
+	width: 50%;
+}
+
+.card-checkbox {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-right: 20px;
+	width: 15%;
+}
+
+.top-card {
+	width: inherit;
+	height: 55px;
+	background: linear-gradient(to left, #C5E2EA, #C5E2EA);
+	padding-left: 20px;
+	padding-right: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.card-top-actions {
+	font-weight: lighter;	
+}
+
+.card-top-info-row1 {
+	font-size: 20px;
+}
+
+.card-top-info-row2 {
+	font-size: 1.5em;
+	color: #95C4D6;
+}
+
+.card-content-wrapper {
+	padding: 20px;
+}
+
+.card-content {
+	display: flex;
+	flex-direction: row;
+	padding: 10px;
+}
+
+.card-info {
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+}
+
+.one-card {
+	display: flex;
+	flex-direction: column;
+	background-color: #F7F7F7;
+}
+
+.card-money {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 20px;
+	height: 60%;
+}
+
+.card-money img {
+	height: 100%;
+	width: 55%;
+	border-radius: 17px;
+}
+
+.card-available {
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+	align-items: center;
+	justify-content: center;
+}
+
+.sum-block {
+	font-size: 20px;
+	width: 100%;
+	height: 100%;
+}
+
+.money-amount {
+	font-size: 20px;
+}
+
+.card-account {
+	height: 40%;
+	display: flex;
+	flex-direction: row;
+	
+	margin-bottom: 50px;
+}
+
+.card-account-left {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	justify-content: space-between;
+}
+
+.card-left-info {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.card-left-row1, .card-left-row2, .card-left-row3 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 10px 0;
+	width: 100%;
+}
+
+.card-account p {
+	font-size: 10px;
+	color: gray;
+}
+
+.card-account a {
+	font-size: 10px;
+	color: #A4B5C3;
+	border-bottom: 1px dashed #A4B5C3;
+}
+
+.card-left-buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.card-left-buttons button {
+	width: 40%;
+	background-color: white;
+	border: 2px solid black;
+	border-radius: 5px;
+	height: 30px;
+	font-size: 10px;
+}
+
+.card-account-right {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	justify-content: space-between;
+	margin-left: 20px;
+	/*padding-left: 5px;*/
+	/*padding-top: 10px;*/
+}
+
+.card-right-info {
+	margin: 10px 10px;
+}
+
+.card-right-buttons {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.card-right-buttons button {
+	border: 2px solid black;
+	border-radius: 5px;
+	height: 30px;
+	width: 70%;
+	/*margin: 0 auto;*/
+}
+
+.card-history {
+	width: 40%;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.card-history > a {
+	margin-top: 20px;
+	font-size: 1em;
+	color: #97a3ab;
+}
+
+.history-buttons {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.history-buttons button {
+	width: 50%;
+	border: 1px solid gray;
+	height: 30px;
+}
+
+.selected {
+	border: 1px solid black !important;
+	font-weight: bold;
+	/*background-color: red;*/
+}
+
+.last-operations {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.last-op-row {
+	padding: 10px 0;
+	border-bottom: 1px solid gray;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.last-row {
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.last-op-row a {
+	font-size: 1.1em;
+	color: black;
+	border-bottom: 1px dashed black;
+}
+
+.op-title {
+	font-size: 12px;
+}
+
+.op-date {
+	font-size: 10px;
+	color: #A9A9A9
+}
+
+.op-sum {
+	font-size: 12px;
+}
+
+.full-list-show {
+	font-size: 1.2em !important;
+	color: lightblue !important;
+}
+
