@@ -1,0 +1,115 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; 
+}
+
+body, html {
+	height: 100%;
+	width: 100%;
+}
+
+.wrap {
+	background-color: #4CD4B0;
+	height: inherit;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.modal {
+	margin: 0 auto; 
+	height: 300px;
+	width: 500px;
+	background-color: #FFFCE6;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.input {
+	padding-left: 10px;
+}
+
+.board {
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	height: 360px;
+	width: 360px;
+	justify-content: space-between;
+	background-color: white;
+}
+
+.square {
+	height: 120px;
+	width: 120px;
+	background-color: #EDD834;
+	cursor: pointer;
+	border: 1px solid #4CD4B0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Merriweather', serif;
+	font-size: 38px;
+	color: #7D1424;
+}
+
+.square:hover {
+	background-color: #F24D16;
+	transition: 0.7s all ease;
+}
+
+.players {
+	display: flex;
+}
+
+.score {
+	display: flex;
+}
+
+.scoreboard-table {
+	margin-top: 100px;
+	display: flex;
+	width: 500px;
+	background-color: #F24D16;
+}
+
+.scoreboard {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #4CD4B0;
+}
+
+.scoreboard:hover {
+	background-color: #EDD834;
+}
+
+.scoreboard p {
+	font-family: 'Merriweather', serif;
+	font-size: 38px;
+}
+
+.alert_modal {
+	position: absolute;
+	top: 25%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 200px;
+	width: 300px;
+	visibility: hidden;
+	background-color: #F24D16;
+}
+
+.alert_modal p {
+	font-size: 24px;
+	font-family: 'Merriweather', serif;
+
+}
